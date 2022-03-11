@@ -65,33 +65,26 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p><strong>Answer:</strong> JavaScript is a single-threaded programming language, which means it has a single Call Stack. Therefore it can do one thing at a time. The Call Stack is a data structure which records basically where in
-                            the program we are. If we step into a function, we put it on the top of the stack.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Q2: What does Javascript event loop do?? 
-                </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p><strong>Answer:</strong> JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.</p>
+                        <p><strong>Answer:</strong> ক্লাইন্ট সাইট স্ক্রিপ্টিং ল্যাঙ্গুয়েজের মধ্যে অন্যতম জনপ্রিয় ল্যাঙ্গুয়েজ হলো Javascript। ক্লাইন্ট সাইট স্ক্রিপ্টিং ল্যাঙ্গুয়েজ বলতে যে প্রোগ্রামিং ল্যাঙ্গুয়েজ মূলত ওয়েব ব্যাউজার এ রান হয়। JavaScript এর
+                            কোড সরাসরি ব্রাউজারে এ রান হয় না। এটি মূলত আগে মেশিন ল্যাংগুয়েজে এ কনভার্ট হয়। ভিন্ন ভিন্ন ব্রাউজারে ভিন্ন ধরনের ম্যাকানিজম থাকতে পারে। যেমনঃ গুগলের Chrome ব্রাউজারে v8 নামক ইঞ্জিন রয়েছে। আমাদের JavaScript কোড যখন ব্রাউজারের
+                            কাছে যাওয়ার পর ব্রাউজার এটিকে JavaScript ইঞ্জিনের কাছে পাঠিয়ে দেয়। ইঞ্জিন এটিকে আবার Compiled করে মেশিন ল্যাংগুয়েজে পরিনত করে। JavaScript কোড এক লাইন এক লাইন করে execute হয়। কারন JavaScript হলো single-threaded. তার মানে একটি
+                            নিদিষ্ট সময়ে একটি মাত্র statement execute হবে। তার পর এটি আমাদের ব্যাউজার এর দেখানো হয়। Default ভাবে JavaScript কাজ করে synchronous পদ্দতিতে. কিন্তু আমারা কিছু মেথড ব্যবহার করে JavaScript কে asynchronous পদ্দতিতে কাজ করাতে
+                            পারি। মূলত এভাবেই JavaScript কাজ করে।</p>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Q3: What is the difference between local storage and session storage?
+                  Q2: What is the difference between local storage and session storage?
                 </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p><strong>Answer:</strong> The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends. A unique page session gets created once
-                            a document is loaded in a browser tab. Page sessions are valid for only one tab at a time.</p>
+                        <p><strong>Answer:</strong> আমাদের ব্রাউজার বন্ধ করার সাথে সাথে session storage এর ডাটা গুলো মুছে যায়। কিন্তু local storage ক্ষেত্রে সেটা হয় না। ব্রাউজার বন্ধ করার পর ও local storage এর ডাটা গুলো থেকে যায়। আমরা যতক্ষণ না আমাদের ব্রাউজার
+                            এর history/cache রিমুভ না করি ততক্ষণ থাকে। local storage এ ডাটা save করতে হলে আমাদের কোডে লিখতে হয়ঃ localStorage.setItem(); আর local storage থেকে ডাটা পেতে গেলে কোডে লিখতে হয়ঃ localStorage.getItem()। একইভাবে session storage
+                            এ ডাটা save করতে গেলে আমাদের কোডে লিখতে হয়ঃ sessionStorage.setItem() এবং sessionStorage থেকে ডাটা পেতে হলে আমাদের কোডে লিখতে হয়ঃ sessionStorage.getItem(), localStorage এর Capacity হলো 10Mb পর্যন্ত অন্যদিকে sessionStorage এর
+                            কথা বললে এর capacity হলো 5mb পর্যন্ত। client শুধুমাত্র sessionStorage data পড়তে পারবে ব্রাউজার বন্ধের আগ পর্যন্ত এবং localStorage data পড়তে পারবে ব্রাউজার বন্ধ করে আবার চালু করলেও । </p>
                     </div>
                 </div>
             </div>
